@@ -17,7 +17,7 @@ const SharingModal = () => {
   const dispatch = useDispatch();
   const currentUrl = useLocation().pathname;
   // console.log(currentUrl);
-  const urlTocopy = `https://dipankarflashcard.netlify.app${currentUrl}`;
+  const urlTocopy = `https://flashcard-generator-react.vercel.app/${currentUrl}`;
 
   return (
     <div data-testid="sharing-modal">
