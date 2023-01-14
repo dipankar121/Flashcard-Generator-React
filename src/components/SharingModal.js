@@ -17,7 +17,7 @@ const SharingModal = () => {
   const dispatch = useDispatch();
   const currentUrl = useLocation().pathname;
   // console.log(currentUrl);
-  const urlTocopy = `https://flashcard-generator-react.vercel.app/${currentUrl}`;
+  const urlTocopy = `https://dipankar-flashcard.vercel.app/${currentUrl}`;
 
   return (
     <div data-testid="sharing-modal">
@@ -47,7 +47,7 @@ const SharingModal = () => {
                 onClick={() => {
                   toast.success("Copied To Clipboard");
                   return navigator.clipboard.writeText(
-                    `https://flashcard-generator-react.vercel.app/${currentUrl}`
+                    `https://dipankar-flashcard.vercel.app/${currentUrl}`
                   );
                 }}
                 size={30}
