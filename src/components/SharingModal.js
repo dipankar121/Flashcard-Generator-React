@@ -47,7 +47,7 @@ const SharingModal = () => {
                 onClick={() => {
                   toast.success("Copied To Clipboard");
                   return navigator.clipboard.writeText(
-                    `https://dipankarflashcard.netlify.app${currentUrl}`
+                    `https://flashcard-generator-react.vercel.app/${currentUrl}`
                   );
                 }}
                 size={30}
