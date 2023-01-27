@@ -368,7 +368,10 @@ const CreateFlashCard = () => {
                           cardImage: "",
                         })
                       }
-                      className="flex items-center space-x-2 bg-blue-600 text-white font-medium mt-2 text-md py-2 px-4 rounded-md hover:scale-110 ease-in-out duration-150"
+                      className="flex justify-center items-center lg:mt-[28px] bg-gray-50
+                      border border-gray-300 text-blue-700 font-semibold
+                      rounded-lg py-2 px-4 hover:bg-blue-700 hover:text-white
+                      ease-in-out duration-200"
                     >
                       {/* ADD MORE SECTION BUTTON */}
                       <AiOutlinePlus size={20} />
