@@ -8,18 +8,19 @@ const CardList = ({ newData }) => {
         Flashcards:
       </p>
       {/* Mapping through the list of cards and displaying them */}
-      {newData[0].cardList.map((card, index) => (
-        <div key={index}>
-          <NavLink to={`${card.cardId}`}>
-            {/* Trimming the card name to a specific length if its long */}
-            <p className="w-[95px] px-4 lg:pt-1 lg:pb-2 text-center text-md hover:font-semibold ease-in-out duration-200">
-              {card.cardName.length > 7
-                ? card.cardName.slice(0, 4) + "..."
-                : card.cardName}
-            </p>
-          </NavLink>
-        </div>
-      ))}
+      {newData[0].cardList &&
+        newData[0].cardList.map((card, index) => (
+          <div key={index}>
+            <NavLink to={`${card.cardId}`}>
+              {/* Trimming the card name to a specific length if its long */}
+              <p className="w-[95px] px-4 lg:pt-1 lg:pb-2 text-center text-md hover:font-semibold ease-in-out duration-200">
+                {card.cardName.length > 7
+                  ? card.cardName.slice(0, 4) + "..."
+                  : card.cardName}
+              </p>
+            </NavLink>
+          </div>
+        ))}
     </div>
   );
 };

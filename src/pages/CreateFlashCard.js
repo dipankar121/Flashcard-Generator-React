@@ -141,11 +141,12 @@ const CreateFlashCard = () => {
                       // Making sure that the user giving a valid image
                       const image = event.target.files[0];
                       if (!image.name.match(/\.(jpg|jpeg|png|gif|jfif)$/)) {
-                        alert("select valid image.");
+                        toast.warn("Please Add Valid Image"); // Making sure that a user enters valid image
                       } else {
                         reader.readAsDataURL(image);
 
                         reader.onload = () => {
+                          F;
                           // Code for uploading Image
                           setFieldValue("groupImage", reader.result);
                         };
@@ -309,7 +310,7 @@ const CreateFlashCard = () => {
                                           /\.(jpg|jpeg|png|gif|jfif|tif|tiff)$/
                                         )
                                       ) {
-                                        alert("select valid cardImg.");
+                                        toast.warn("Please Add Valid Image"); // Making sure that a user enters valid image
                                       } else {
                                         reader.readAsDataURL(cardImg);
 
