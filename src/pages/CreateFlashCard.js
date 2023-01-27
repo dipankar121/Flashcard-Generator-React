@@ -310,7 +310,7 @@ const CreateFlashCard = () => {
                                           /\.(jpg|jpeg|png|gif|jfif|tif|tiff)$/
                                         )
                                       ) {
-                                        toast.warn("Please Add Valid Image"); // Making sure that a user enters valid image
+                                        toast.warn("Please Add A Valid Image"); // Making sure that a user enters valid image
                                       } else {
                                         reader.readAsDataURL(cardImg);
 
