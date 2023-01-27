@@ -146,7 +146,6 @@ const CreateFlashCard = () => {
                         reader.readAsDataURL(image);
 
                         reader.onload = () => {
-                          F;
                           // Code for uploading Image
                           setFieldValue("groupImage", reader.result);
                         };
